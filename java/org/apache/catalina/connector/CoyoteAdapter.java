@@ -595,7 +595,7 @@ public class CoyoteAdapter implements Adapter {
         if (undecodedURI.equals("*")) {
             if (req.method().equals("OPTIONS")) {
                 StringBuilder allow = new StringBuilder();
-                allow.append("GET, HEAD, POST, PUT, DELETE, OPTIONS");
+                allow.append("GET, HEAD, POST, OPTIONS");
                 // Trace if allowed
                 if (connector.getAllowTrace()) {
                     allow.append(", TRACE");
