@@ -23,12 +23,12 @@ General preparations before any publishing:
     mvn.properties and override as necessary.
 
 To publish a snapshot do the following:
-1 - ant -f mvn-pub.xml deploy-snapshot
+1 - ant -f res/maven/mvn-pub.xml deploy-snapshot
     This populates
     https://repository.apache.org/content/repositories/snapshots/org/apache/tomcat/
 
 To release do the following:
-1 - ant -f mvn-pub.xml deploy-release
+1 - ant -f res/maven/mvn-pub.xml deploy-release
     that step creates a staging area in
     https://repository.apache.org/index.html#stagingRepositories
 2 - check the upload and then close the repository
@@ -36,4 +36,4 @@ To release do the following:
 4 - in https://repository.apache.org/index.html#stagingRepositories release it
 
 To install in your maven repo:
-1 - ant -f mvn-pub.xml generic-install
+1 - ant -f res/maven/mvn-pub.xml generic-install

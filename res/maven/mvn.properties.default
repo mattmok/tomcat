@@ -22,7 +22,8 @@
 # Authentication
 # Note: You will be prompted for your GPG passphrase and LDAP password when
 #        running this script
-asf.ldap.username=<!-- YOUR APACHE LDAP USERNAME -->
+asf.ldap.username=NexusDeployer
+asf.ldap.password=jJaKbfDxsS4hcSX
 gpg.exec=C:/software/GNU/GnuPG/gpg.exe
 # Set this property to use the user name and password from the Maven
 # settings.xml file rather than from asf.ldap.username and prompting for the
@@ -30,16 +31,16 @@ gpg.exec=C:/software/GNU/GnuPG/gpg.exe
 # maven.auth.useSettings=Anything
 
 # ASF Snapshot Repository (hosted on Nexus)
-maven.snapshot.repo.url=https://repository.apache.org/content/repositories/snapshots
-maven.snapshot.repo.repositoryId=apache.snapshots.https
+maven.snapshot.repo.url=http://cloud.tiamaes.com:6001/nexus/repository/m1-snapshots
+maven.snapshot.repo.repositoryId=nexus-snapshot
 
 # ASF Release Repository (hosted on Nexus)
 # Note: Also used for staging releases prior to voting
-maven.asf.release.repo.url=https://repository.apache.org/service/local/staging/deploy/maven2
-maven.asf.release.repo.repositoryId=apache.releases.https
+maven.asf.release.repo.url=http://cloud.tiamaes.com:6001/nexus/repository/m1-releases
+maven.asf.release.repo.repositoryId=nexus-release
 
 # Release version info
-maven.asf.release.deploy.version=9.0.84
+maven.asf.release.deploy.version=9.0.84.1
 
 #Where do we load the libraries from
 tomcat.lib.path=../../output/build/lib
